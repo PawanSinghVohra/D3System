@@ -149,3 +149,4 @@ for i in range(30):
 # if(testAcc>.5):
 print("THE SUBJECT IS DROWSY by:%",l.count("Drowsy")/len(l)*100,"%")
 print("THE SUBJECT IS ACTIVE by:%",(1-l.count("Drowsy")/len(l))*100,"%")
+# THIS IS PAWAN SINGH TEST MESSAGE
