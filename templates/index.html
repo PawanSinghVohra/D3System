@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Drowsy Driver Detection System</title>
+    <link rel="stylesheet" href="static/ribbon.css">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+</style>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body class="atomic-ui-root">
+<ul>
+  <li><a class="active" href="/team">Team</a></li>
+  <li><a>Drowsy Driver Detection System</a></li>
+</ul>
+<br>
+<br>
+    <h1 class="ribbon">
+   <strong class="ribbon-content">Drowsy Driver Detection System</strong>
+</h1>
+<div class="col-xl-16">
+  <div class="column" style="padding:3%">
+    <div class="card">
+      <img src="static/dd.jfif" alt="Jane" style="width:100%">
+    </div>
+  </div>
+    <div class="column" style="padding:3%">
+    <div class="card" style="padding:2%">
+      <div class="container">
+        <h2>Results:</h2>
+        <h5 class="title">According to the analyzed data the person is:</h5>
+          <h3>Drowsy : {{d}}</h3>
+        <h3>Normal : {{n}}</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
