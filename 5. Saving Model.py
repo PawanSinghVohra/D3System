@@ -97,12 +97,12 @@ print("********************************    TESTING STARTED *********************
 
 TEST_EEG_data = pd.DataFrame({}) ## create an empty df that will hold data from each file
 print("****************   LOADING TESTING DATA *******************")
-directory = os.path.join("C:\\","Users\VOHRA\PycharmProjects\Analyse\input\SMNI_CMI_TEST\SMNI_CMI_TEST\co2c0000339")
+directory = os.path.join("C:\\","Users\VOHRA\PycharmProjects\Analyse\input\SMNI_CMI_TEST\SMNI_CMI_TEST\co2c0000347")
 for root,dirs,files in os.walk(directory):
     for file in files:
        if file.endswith(".gz"):
 
-           test_temp_df = pd.read_csv("C:\\Users\VOHRA\PycharmProjects\Analyse\input\SMNI_CMI_TEST\SMNI_CMI_TEST\co2c0000339\\"+file,skiprows = 4,delimiter=' ',nrows=256,usecols = [3])  ## read from the file to df
+           test_temp_df = pd.read_csv("C:\\Users\VOHRA\PycharmProjects\Analyse\input\SMNI_CMI_TEST\SMNI_CMI_TEST\co2c0000347\\"+file,skiprows = 4,delimiter=' ',nrows=256,usecols = [3])  ## read from the file to df
            test_temp_df=test_temp_df.transpose()
            # print(test_temp_df)
            if file[3]=='a':
@@ -150,3 +150,4 @@ for i in range(30):
 print("THE SUBJECT IS DROWSY by:%",l.count("Drowsy")/len(l)*100,"%")
 print("THE SUBJECT IS ACTIVE by:%",(1-l.count("Drowsy")/len(l))*100,"%")
 # THIS IS PAWAN SINGH TEST MESSAGE
+
